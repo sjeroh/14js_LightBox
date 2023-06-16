@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>LightBox</h2>
+  <div class="row">
+    <div class="column">
+      <img src="img/BMW-M1_Procar-1978-1280-01.jpg" class="hover-shadow cursor" onclick="openModal(); currentSlide(1)"
+        alt="">
+    </div>
+    <div class="column">
+      <img src="img/Aston_Martin-DB6_Volante_SWB-1966-1280-01.jpg" class="hover-shadow cursor"
+        onclick="openModal(); currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img src="img/Hyundai-Pony_Concept-2021-1280-02.jpg" class="hover-shadow cursor"
+        onclick="openModal(); currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img src="img/Mercedes-Benz-300_SE_W112-1961-1280-01.jpg" class="hover-shadow cursor"
+        onclick="openModal(); currentSlide(4)" alt="">
+    </div>
+  </div> <!-- row -->
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()"><i class="fas fa-times"></i></span> <!-- close -->
+
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1/4</div>
+        <img src="img/BMW-M1_Procar-1978-1280-01.jpg" alt="">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2/4</div>
+        <img src="img/Aston_Martin-DB6_Volante_SWB-1966-1280-01.jpg" alt="">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3/4</div>
+        <img src="img/Hyundai-Pony_Concept-2021-1280-02.jpg" alt="">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4/4</div>
+        <img src="img/Mercedes-Benz-300_SE_W112-1961-1280-01.jpg" alt="">
+      </div>
+      
+
+      <a href="#" class="prev"><i class="fas fa-caret-left" alt="" onclick="plusSlides(-1)"></i></a>
+      <a href="#" class="next"><i class="fas fa-caret-right" alt="" onclick="plusSlides(1)"></i></a>
+
+      <div class="caption-contanier">
+        <p id="caption"></p>
+      </div> <!-- // caption-contanier-->
+
+      <div class="row">
+        <div class="column">
+          <img src="img/BMW-M1_Procar-1978-1280-01.jpg" class="demo cursor" onclick="currentSlide(1)"
+            alt="BMW-M1.Procar-1978">
+        </div>
+        <div class="column">
+          <img src="img/Aston_Martin-DB6_Volante_SWB-1966-1280-01.jpg" class="demo cursor"
+            onclick="currentSlide(2)" alt="Aston_Martin-DB6_Volante_SWB-1966">
+        </div>
+        <div class="column">
+          <img src="img/Hyundai-Pony_Concept-2021-1280-02.jpg" class="demo cursor" onclick="currentSlide(3)"
+            alt="Hyundai-Pony_Concept-2021">
+        </div>
+        <div class="column">
+          <img src="img/Mercedes-Benz-300_SE_W112-1961-1280-01.jpg" class="demo cursor"
+            onclick="currentSlide(4)" alt="Mercedes-Benz-300_SE_W112-1961">
+        </div>
+      </div>
+      <!--// row -->
+
+    </div> <!-- // modal-content -->
+
+
+  </div><!-- // myModal -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
